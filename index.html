@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>SuperHero API</title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="contenedor-header">
+        <a class="link boton" href="html/favs.html">Ver favoritos</a>
+      </div>
+
+      <div class="contenedor-header">
+        <select id="selectNombres" onchange="superPorNombre()"></select>
+      </div>
+
+      <div class="contenedor-header">
+        <a href="https://www.superheroapi.com/" target="_blank">
+          <img src="img/logo.png" class="logo"
+        /></a>
+      </div>
+
+      <div class="contenedor-header">
+        <input
+          class="buscador"
+          type="text"
+          id="busqueda"
+          placeholder="Busca tu Super Héroe ..."
+        />
+      </div>
+    </header>
+
+    <!-- RESULTADOS DE BUSQUEDA -->
+    <div id="contenedor-resultados">
+      <div id="resultados"></div>
+    </div>
+
+    <!-- COMENTARIOS -->
+    <div class="contenedor-comentarios">
+      <section>
+        <h2>Comentarios</h2>
+        <div>
+          <form id="formulario">
+            <textarea
+              id="areaComentarios"
+              cols="60"
+              rows="7"
+              placeholder="Añade tu comentario..."
+            ></textarea>
+            <br />
+            <br />
+            <button type="submit" id="btn-aniadir">Publicar comentario</button>
+          </form>
+        </div>
+
+        <div id="comentario"></div>
+      </section>
+    </div>
+  </body>
+  <script src="js/index.js" defer></script>
+  <script src="js/comentarios.js" defer></script>
+  <script src="js/filtro.js" defer></script>
+</html>
